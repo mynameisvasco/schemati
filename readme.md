@@ -1,4 +1,6 @@
-![](https://i.imgur.com/HeKQG6t.png?1)
+<p align="center">
+   <img src="https://i.imgur.com/HeKQG6t.png?1">
+</p>
 ## Introduction
 Schemati is a programming language built to make games and animations programming easier to beginner developers.
 Schemati has a simple and easy to use syntax but it implements the best practises of well known programming languages.
