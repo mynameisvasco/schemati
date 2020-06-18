@@ -1,5 +1,5 @@
 ![](https://i.imgur.com/UUL6pQS.png?1)
-##Introduction
+## Introduction
 Schemati is a programming language built to make games and animations programming easier to beginner developers.
 Schemati has a simple and easy to use syntax but it implements the best practises of well known programming languages.
 
@@ -11,34 +11,34 @@ Schemati has a simple and easy to use syntax but it implements the best practise
 2. Run install.sh bash script.
 3. Add C:/Schemati to PATH environment variable.
 
-##Types
+## Types
 ![](https://i.imgur.com/15i52cR.png)
 
-##Entity
+## Entity
 ![](https://i.imgur.com/cTIYhCM.png)
 ![](https://i.imgur.com/jInCbzK.png)
 ![](https://i.imgur.com/Yl4BCGl.png)
 
-##Arrays
+## Arrays
 ![](https://i.imgur.com/q26dkhW.png)
 
 ##Cycles
 ![](https://i.imgur.com/laRcT2W.png)
 
-##Conditions
+## Conditions
 ![](https://i.imgur.com/1XvmKJj.png)
 
-##Functions
+## Functions
 ![](https://i.imgur.com/FEnxNnv.png)
 
-##Bult-in functions
+## Bult-in functions
 ![](https://i.imgur.com/jp1mfJu.png)
 
-##Animations
+## Animations
 ![](https://i.imgur.com/U8BsKpY.png)
 
-##Start
+## Start
 ![](https://i.imgur.com/dQ8Kqbb.png)
 
-##Config
+## Config
 ![](https://i.imgur.com/et9ePAq.png)
