@@ -1,0 +1,9 @@
+include <colors.schh>
+
+scene {
+	title: "My Animation",
+	width: 1280,
+	height: 720,
+	scale: 1.0,
+	background: fromHeader(WHITE)
+}

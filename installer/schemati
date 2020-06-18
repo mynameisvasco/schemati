@@ -1,0 +1,28 @@
+#!/bin/bash
+# Schemati compiler and runner for LINUX and OSX 
+# Author: Vasco Sousa 
+source="$1"
+config="$2"
+schExt=".sch"
+javaExt=".java"
+
+if [ "$(uname)" == "Darwin" ]; then
+    echo $(eval "java -jar /usr/local/bin/Schemati.jar $source $config")
+    echo $(eval "javac -classpath /usr/local/bin/Schemati.jar ${source/$schExt/$javaExt}")  
+    echo $(eval "java -cp .:/usr/local/bin/Schemati.jar ${source/$schExt/} > log.txt 2>&1")
+
+elif [ "$(uname)" == "Linux" ]; then
+    echo $(eval "java -jar /usr/local/bin/Schemati.jar $source $config")
+    echo $(eval "javac -classpath /usr/local/bin/Schemati.jar ${source/$schExt/$javaExt}")  
+    echo $(eval "java -cp .:/usr/local/bin/Schemati.jar ${source/$schExt/} > log.txt 2>&1")
+
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    echo $(eval "java -jar 'C:\Schemati\Schemati.jar' $source $config")
+    echo $(eval "javac -classpath 'C:\Schemati\Schemati.jar' ${source/$schExt/$javaExt}")  
+    echo $(eval "java -cp 'C:/Schemati/Schemati.jar;' ${source/$schExt/} > log.txt 2>&1") 
+
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
+    echo $(eval "java -jar 'C:/Schemati/Schemati.jar' $source $config")
+    echo $(eval "javac -classpath 'C:/Schemati/Schemati.jar' ${source/$schExt/$javaExt}")  
+    echo $(eval "java -cp 'C:/Schemati/Schemati.jar;' ${source/$schExt/} > log.txt 2>&1") 
+fi

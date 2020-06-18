@@ -1,0 +1,87 @@
+main(id, glScope, startCtrl, anim, stat, scene) ::= <<
+    import com.schemati.backend.core.*;
+    import com.schemati.backend.core.Utils;
+    import com.schemati.backend.entities.*;
+    import com.schemati.compiler.configLanguage.*;
+    import java.awt.event.KeyEvent;
+    import java.awt.Color;
+    import java.util.*;
+    import java.util.List;
+    import java.util.stream.Collectors;
+
+    class MyProgram extends AbstractProgram {
+         boolean started = false;
+         <stats(glScope)>
+
+         @Override
+         public void start() {
+        <stats(startCtrl)>
+        <stats(stat)>
+         }
+
+         @Override
+         public void update() {
+        <stats(anim)>
+         }
+    }
+
+    public class <id> {
+        public static void main(String[] args) {
+            Scene myScene = new Scene(<scene>);
+            myScene.getEngine().setAbstractProgram(new MyProgram());
+            myScene.getEngine().start();
+        }
+    }
+>>
+
+scene(title, width, height, scale, background) ::= <<
+    <title>,<width>,<height>,<scale>, Color.decode("<background>")
+>>
+
+stats(stat) ::= <<
+    <if(stat)><stat; separator="\n"><endif>
+>>
+
+assignFunc(type, id, args, stat) ::= <<
+    public <type> <id> (<if(args)><args><endif>) {
+        <stats(stat)>
+    }
+>>
+
+ifStat(cond, stat) ::= <<
+    <if(cond)> if(<cond>) {
+        <stats(stat)>
+    }
+    <endif>
+>>
+
+elseStat(stat) ::= <<
+    <if(stat)> else {
+        <stats(stat)>
+    }
+    <endif>
+>>
+
+forStat(start, end, step, stat) ::= <<
+    for(<start> <end> <step>) {
+        <stats(stat)>
+    }
+>>
+
+forEachStat(var, array, stat) ::= <<
+    for(<var> : <array>) {
+        <stats(stat)>
+    }
+>>
+
+timedAnim(start, during, stat) ::= <<
+    if(getEngine().getEllapsedMillis() >= <start> && getEngine().getEllapsedMillis() \<=  <start> + <during>) {
+        <stats(stat)>
+    }
+>>
+
+eventAnim(start, stat) ::= <<
+    if(getEngine().getInput().isKey(KeyEvent.<start>)) {
+        <stats(stat)>
+    }
+>>

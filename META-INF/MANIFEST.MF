@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Schemati
+Class-Path: lib/antlr-4.8-complete.jar lib/ST-4.3.jar
+Main-Class: com.schemati.compiler.Main

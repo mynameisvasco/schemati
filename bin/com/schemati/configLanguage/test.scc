@@ -1,0 +1,24 @@
+element RESISTENCE {
+    identifier: "Resistence",
+    inputNodes: [
+        {
+            x: 10,
+            y: 0,
+        },
+        {
+            x: 10,
+            y: 10,
+        }
+    ],
+    outputNode: [
+        {
+            x: 20,
+            y: 0,
+        },
+        {
+            x: 20,
+            y: 10,
+        }
+    ]
+    image: "res/resistence",
+}
