@@ -1,9 +1,9 @@
-![](https://i.imgur.com/UUL6pQS.png?1)
+![](https://i.imgur.com/HeKQG6t.png?1)
 ## Introduction
 Schemati is a programming language built to make games and animations programming easier to beginner developers.
 Schemati has a simple and easy to use syntax but it implements the best practises of well known programming languages.
 
-##Compile and run a program
+## Compile and run a program
 #### Linux/OS X
 1.  Run install.sh bash script.
 #### Windows
