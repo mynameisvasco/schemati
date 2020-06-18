@@ -25,7 +25,7 @@ Schemati has a simple and easy to use syntax but it implements the best practise
 ## Arrays
 ![](https://i.imgur.com/q26dkhW.png)
 
-##Cycles
+## Cycles
 ![](https://i.imgur.com/laRcT2W.png)
 
 ## Conditions
