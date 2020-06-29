@@ -6,10 +6,10 @@
 Schemati is a programming language built to make games and animations programming easier to beginner developers.
 Schemati has a simple and easy to use syntax but it implements the best practises of well known programming languages.
 #### CoAuthors
-<a href="https://github.com/Francisquinho85">@Francisquinho85</a>
-<a href="https://github.com/eapsa">@espsa</a>
-<a href="https://github.com/RobertoGraca">@RobertoGraca</a>
-<a href="https://github.com/AnBapDan">@AnBapDan</a>
+<a href="https://github.com/Francisquinho85">@Francisquinho85</a><br>
+<a href="https://github.com/eapsa">@espsa</a><br>
+<a href="https://github.com/RobertoGraca">@RobertoGraca</a><br>
+<a href="https://github.com/AnBapDan">@AnBapDan</a><br>
 
 ## Compile and run a program
 #### Linux/OS X
